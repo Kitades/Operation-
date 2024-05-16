@@ -23,8 +23,8 @@ class Amount:
 
     def __repr__(self):
         return (
-            f'Amount(value={self.value},'
-            f'currency_name={self.currency_name},'
+            f'Amount(value={self.value}, '
+            f'currency_name={self.currency_name}, '
             f'currency_code={self.currency_code})'
             )
 
@@ -68,11 +68,10 @@ class Operation:
 
     def __repr__(self):
         return (
-            f'Operation{self.id},'
-            f'description{self.description}'
-            f'state={self.state},'
-            f'date={self.operation_date}'
-            f'amount={self.amount}',
-            f'from={self.payment_from}',
-            f'to={self.payment_to}'
+            f'Operation{self.id}, '
+            f'description{self.description}, '
+            f'state={self.state}, '
+            f'date={self.operation_date}, '
+            f'amount={self.amount}, '
+            f'from={self.payment_from}, to={self.payment_to}'
             )
